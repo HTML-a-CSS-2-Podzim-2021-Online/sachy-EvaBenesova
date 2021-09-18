@@ -1,0 +1,150 @@
+*,:after, :before{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 600px;
+    padding: 20px;
+    font-family: sans-serif;
+    align-items: center;
+    margin: auto;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+/* hráči */
+
+h2{
+    font-size: 15px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.hraci{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin: 15px 0;
+}
+
+.hraci img{
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.hrac {
+    display: flex;
+}
+
+.honza{
+    order:1;
+    padding: 0 10px;
+}
+
+.adela{
+    padding: 0 10px;
+    text-align: right;
+}
+
+/* ¸šachy */
+
+.figurka{
+    width:100%;
+    justify-self: center;
+}
+
+.sachovnice{
+    background-image: url(obrazky/sachovnice.png);
+    background-repeat: no-repeat;
+    background-position: center ;    background-size:100%;
+    border: 10px solid #392C16;
+    max-height:fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.dama-bila, .dama-cerna, .kun-cerna, .strelec-bila, .vez-bila{
+    display: none;
+}
+
+.strelec-cerna{
+    grid-row: 1;
+    grid-column: 5;
+}
+
+.kral-bila{
+    grid-row: 8;
+    grid-column: 6;
+}
+
+.kral-cerna{
+    grid-row: 6;
+    grid-column: 6;
+}
+
+.kun-bila{
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.pesec-bila{
+    grid-row: 4;
+    grid-column: 4;
+}
+
+.pesec-cerna-1{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.pesec-cerna-2{
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.pesec-cerna-3{
+    grid-row: 4;
+    grid-column: 8;
+}
+
+.vez-cerna{
+    grid-row: 8;
+    grid-column: 3;
+}
+
+/* vítěz */
+
+h3{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+button{
+    background-color: #4c7dc0;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #304d76; 
+    display: block;
+    margin: auto;
+    transition: 0.6s transform;
+}
+
+/* stisknutí buttonu */
+
+button:active{
+    box-shadow: 1px 1px 1px rgb(48, 77, 118);
+    transform:translate(2px, 2px);
+}
+
+
